@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFBCCEAA288329280057927F /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBCCEA9288329280057927F /* CreditsView.swift */; };
+		EFBCCEAD288329B00057927F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBCCEAC288329B00057927F /* HeaderView.swift */; };
+		EFBCCEAF28832FC10057927F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBCCEAE28832FC10057927F /* SettingsView.swift */; };
 		EFDE3EE4288317460090C00E /* Notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EFDE3EE3288317460090C00E /* Notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EFDE3EE9288317470090C00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDE3EE8288317470090C00E /* Assets.xcassets */; };
 		EFDE3EEF288317470090C00E /* Notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EFDE3EEE288317470090C00E /* Notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,6 +18,8 @@
 		EFDE3EF8288317470090C00E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE3EF7288317470090C00E /* ComplicationController.swift */; };
 		EFDE3EFA288317480090C00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDE3EF9288317480090C00E /* Assets.xcassets */; };
 		EFDE3EFD288317480090C00E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDE3EFC288317480090C00E /* Preview Assets.xcassets */; };
+		EFDE3F0F288318B70090C00E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE3F0E288318B70090C00E /* Note.swift */; };
+		EFDE3F11288321770090C00E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDE3F10288321770090C00E /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EFBCCEA9288329280057927F /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		EFBCCEAC288329B00057927F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EFBCCEAE28832FC10057927F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EFDE3EDF288317460090C00E /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDE3EE3288317460090C00E /* Notes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDE3EE8288317470090C00E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +78,8 @@
 		EFDE3EF9288317480090C00E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFDE3EFC288317480090C00E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFDE3EFE288317480090C00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFDE3F0E288318B70090C00E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		EFDE3F10288321770090C00E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFBCCEAB2883298F0057927F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EFBCCEAC288329B00057927F /* HeaderView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		EFDE3ED8288317460090C00E = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +131,9 @@
 		EFDE3EF2288317470090C00E /* Notes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EFDE3EF3288317470090C00E /* ContentView.swift */,
+				EFBCCEAB2883298F0057927F /* Component */,
+				EFDE3F0D288318A60090C00E /* Model */,
+				EFDE3F0C2883189B0090C00E /* View */,
 				EFDE3EF5288317470090C00E /* NotesApp.swift */,
 				EFDE3EF7288317470090C00E /* ComplicationController.swift */,
 				EFDE3EF9288317480090C00E /* Assets.xcassets */,
@@ -129,6 +149,25 @@
 				EFDE3EFC288317480090C00E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFDE3F0C2883189B0090C00E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFDE3EF3288317470090C00E /* ContentView.swift */,
+				EFDE3F10288321770090C00E /* DetailView.swift */,
+				EFBCCEA9288329280057927F /* CreditsView.swift */,
+				EFBCCEAE28832FC10057927F /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFDE3F0D288318A60090C00E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFDE3F0E288318B70090C00E /* Note.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFDE3EF4288317470090C00E /* ContentView.swift in Sources */,
+				EFBCCEAF28832FC10057927F /* SettingsView.swift in Sources */,
 				EFDE3EF6288317470090C00E /* NotesApp.swift in Sources */,
 				EFDE3EF8288317470090C00E /* ComplicationController.swift in Sources */,
+				EFBCCEAA288329280057927F /* CreditsView.swift in Sources */,
+				EFDE3F11288321770090C00E /* DetailView.swift in Sources */,
+				EFDE3F0F288318B70090C00E /* Note.swift in Sources */,
+				EFBCCEAD288329B00057927F /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
